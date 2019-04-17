@@ -21,4 +21,4 @@ $alternatecolors: (
   alternate-5: #ff7900,
 );
 
-$merge: map-merge($keycolors, $alternatecolors, $opacitycolors);
+$merge: map-merge($keycolors, $alternatecolors);
