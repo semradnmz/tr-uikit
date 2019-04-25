@@ -5,6 +5,6 @@ export default sandboxOf(AtomsAlertComponent, {
   declareComponent: false,
 }).add('Atoms Alert Component', {
   template: `
-   <atoms-alert alertText="Example" alertClass="success"></atoms-alert>
+   <atoms-alert alertText="Example Text" alertClass="success"></atoms-alert>
   `,
 });
