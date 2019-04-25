@@ -3,7 +3,7 @@ import { Input, Component, ChangeDetectionStrategy, ViewEncapsulation } from '@a
 @Component({
   selector: 'atoms-alert',
   template: `
-    <div class="alert alert-{{ alertClass }}" role="alert">
+    <div class="alert alert-{{ alertClass }}">
       {{ alertText }}
     </div>
   `,
@@ -12,8 +12,8 @@ import { Input, Component, ChangeDetectionStrategy, ViewEncapsulation } from '@a
 })
 export class AtomsAlertComponent {
   @Input()
-  alertText: string = 'A simple primary alert—check it out!';
+  alertText: string = 'Alert example text';
 
   @Input()
-  alertClass = 'primary';
+  alertClass: string = 'primary';
 }
