@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/*=============COLORS===================================
+======================================================*/
+
+$keycolors: (
+  primary: #00a0ff,
+  secondary: #3900ff,
+  success: #00d592,
+  warning: #ffb300,
+  error: #ff0000,
+  black: #000000,
+  white: #ffffff,
+);
+
+$alternatecolors: (
+  alternate-1: #1400a1,
+  alternate-2: #a6d800,
+  alternate-3: #b200ff,
+  alternate-4: #00aed6,
+  alternate-5: #ff7900,
+);
+
+$merge: map-merge($keycolors, $alternatecolors);

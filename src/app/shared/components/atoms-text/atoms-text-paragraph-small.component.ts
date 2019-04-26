@@ -11,5 +11,5 @@ import { Input, Component } from '@angular/core';
 export class AtomsTextParagraphSmallComponent {
   @Input()
   text: string =
-    'More recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.';
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
 }
