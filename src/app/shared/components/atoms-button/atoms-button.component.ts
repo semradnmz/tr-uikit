@@ -3,7 +3,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
 @Component({
   selector: 'atoms-button',
   template: `
-    <button type="{{ buttonType }}" class="btn btn-{{ buttonClass }}">{{ buttonText }}</button>
+    <button [type]="buttonType" class="btn btn-{{ buttonClass }}">{{ buttonText }}</button>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
@@ -16,5 +16,5 @@ export class AtomsButtonComponent {
   buttonClass: string = 'primary';
 
   @Input()
-  buttonText: string = 'Primary';
+  buttonText: string = 'Button example text';
 }
