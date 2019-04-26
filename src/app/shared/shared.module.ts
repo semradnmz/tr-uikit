@@ -5,6 +5,7 @@ const ATOMS = [
   _components.AtomsTextParagraphSmallComponent,
   _components.AtomsAlertComponent,
   _components.AtomsButtonComponent,
+  _components.AtomsImgComponent,
 ];
 
 const MOLECULES = [];
