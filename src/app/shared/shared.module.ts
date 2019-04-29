@@ -2,10 +2,11 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
 import * as _components from './components';
 
 const ATOMS = [
-  _components.AtomsTextParagraphSmallComponent,
   _components.AtomsAlertComponent,
   _components.AtomsButtonComponent,
+  _components.AtomsIconComponent,
   _components.AtomsImgComponent,
+  _components.AtomsTextParagraphSmallComponent,
 ];
 
 const MOLECULES = [];
