@@ -1,13 +1,16 @@
+
+
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AtomsTextParagraphComponent } from './atoms-text-paragraph.component';
+
 
 export interface IAtomsTextParagraphComponent {
   component: AtomsTextParagraphComponent;
   fixture: ComponentFixture<AtomsTextParagraphComponent>;
 }
 
-describe('AtomsIconComponent', function(this: IAtomsTextParagraphComponent) {
+describe('AtomsTextParagraphComponent', function (this: IAtomsTextParagraphComponent) {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [AtomsTextParagraphComponent],
