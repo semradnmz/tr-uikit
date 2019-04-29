@@ -5,6 +5,6 @@ export default sandboxOf(AtomsHeadingComponent, {
   declareComponent: false,
 }).add('Atoms Heading Component', {
   template: `
-   <atoms-heading headingClass="h1" headingText="Example Text"></atoms-heading>
+   <atoms-heading headingClass="h1" headingText="Heading H1"></atoms-heading>
   `,
 });

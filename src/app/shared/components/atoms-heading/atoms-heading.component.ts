@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
 @Component({
   selector: 'atoms-heading',
   template: `
-    <h1 class="{{headingClass}}">{{headingText}}</h1>
+    <div class="{{headingClass}}">{{headingText}}</div>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
