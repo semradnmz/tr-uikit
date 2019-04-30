@@ -5,6 +5,7 @@ const ATOMS = [
   _components.AtomsAlertComponent,
   _components.AtomsButtonComponent,
   _components.AtomsHeadingComponent,
+  _components.AtomsLinkComponent,
   _components.AtomsIconComponent,
   _components.AtomsImgComponent,
   _components.AtomsProgressComponent,
@@ -12,7 +13,9 @@ const ATOMS = [
 
 ];
 
-const MOLECULES = [];
+const MOLECULES = [
+  _components.MoleculesJumbotronComponent,
+];
 
 const ORGANISMS = [];
 
