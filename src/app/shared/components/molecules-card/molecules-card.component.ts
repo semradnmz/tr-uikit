@@ -7,8 +7,8 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
       <atoms-img [imgSrc]="imgSrc" [imgClass]="imgClass" [imgAlt]="imgAlt"></atoms-img>
       <div class="card-body">
         <atoms-heading [headingClass]="headingClass" [headingText]="headingText"></atoms-heading>
-        <atoms-text-paragraph [textClass]="textClass" [text]="text"></atoms-text-paragraph>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <atoms-text-paragraph [textClass]="textClass">{{ text }}</atoms-text-paragraph>
+        <atoms-link [hrefSrc]="hrefSrc" [hrefClass]="hrefClass" [hrefText]="hrefText"></atoms-link>
       </div>
     </div>
   `,
@@ -36,4 +36,13 @@ export class MoleculesCardComponent {
 
   @Input()
   text: string = 'Some quick example text to build on the card title and make up the bulk of the cards content.';
+
+  @Input()
+  hrefSrc: string = '#';
+
+  @Input()
+  hrefClass: string = 'btn btn-primary';
+
+  @Input()
+  hrefText: string = 'Go somewhere';
 }

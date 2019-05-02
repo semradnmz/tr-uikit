@@ -4,16 +4,13 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from "@a
   selector: 'atoms-text-paragraph',
   template: `
     <p class="{{ textClass }}">
-      {{ text }}
+      <ng-content></ng-content>
     </p>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
 })
 export class AtomsTextParagraphComponent {
-  @Input()
-  text: string = 'Default Text Paragraph';
-
   @Input()
   textClass: string = '';
 }

@@ -5,10 +5,12 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
   template: `
     <footer class="{{ footerClass }}">
       <div class="{{ footerContainerClass }}">
-        <p class="float-right">
+        <atoms-text-paragraph textClass="float-right">
           <atoms-link hrefText="Back to top"></atoms-link>
-        </p>
-        <atoms-text-paragraph [text]="text"></atoms-text-paragraph>
+        </atoms-text-paragraph>
+        <atoms-text-paragraph>
+          {{ text }}
+        </atoms-text-paragraph>
       </div>
     </footer>
   `,
