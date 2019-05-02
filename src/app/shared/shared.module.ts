@@ -9,10 +9,9 @@ const ATOMS = [
   _components.AtomsImgComponent,
   _components.AtomsProgressComponent,
   _components.AtomsTextParagraphComponent,
-
 ];
 
-const MOLECULES = [];
+const MOLECULES = [_components.MoleculesCardComponent];
 
 const ORGANISMS = [];
 
