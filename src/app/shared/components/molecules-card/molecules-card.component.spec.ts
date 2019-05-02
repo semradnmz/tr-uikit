@@ -3,6 +3,7 @@ import { MoleculesCardComponent } from './molecules-card.component';
 import { AtomsImgComponent } from '../atoms-img/atoms-img.component';
 import { AtomsHeadingComponent } from '../atoms-heading/atoms-heading.component';
 import { AtomsTextParagraphComponent } from '../atoms-text/atoms-text-paragraph.component';
+import { AtomsLinkComponent } from '../atoms-link/atoms-link.component';
 
 export interface IMoleculesCardComponent {
   component: MoleculesCardComponent;
@@ -12,7 +13,13 @@ export interface IMoleculesCardComponent {
 describe('MoleculesCardComponent', function(this: IMoleculesCardComponent) {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MoleculesCardComponent, AtomsImgComponent, AtomsHeadingComponent, AtomsTextParagraphComponent],
+      declarations: [
+        MoleculesCardComponent,
+        AtomsImgComponent,
+        AtomsHeadingComponent,
+        AtomsTextParagraphComponent,
+        AtomsLinkComponent,
+      ],
     }).compileComponents();
 
     this.fixture = TestBed.createComponent(MoleculesCardComponent);
@@ -52,5 +59,17 @@ describe('MoleculesCardComponent', function(this: IMoleculesCardComponent) {
     expect(this.component.text).toBe(
       'Some quick example text to build on the card title and make up the bulk of the cards content.',
     );
+  });
+
+  it('should have default hrefSrc', () => {
+    expect(this.component.hrefSrc).toBe('#');
+  });
+
+  it('should have default hrefClass', () => {
+    expect(this.component.hrefClass).toBe('btn btn-primary');
+  });
+
+  it('should have default hrefText', () => {
+    expect(this.component.hrefText).toBe('Go somewhere');
   });
 });

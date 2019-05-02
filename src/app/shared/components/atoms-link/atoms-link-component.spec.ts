@@ -28,8 +28,4 @@ describe('AtomsLinkComponent', function(this: IAtomsLinkComponent) {
   it('should have default imgClass', () => {
     expect(this.component.hrefClass).toBe('link');
   });
-
-  it('should have default imgAlt', () => {
-    expect(this.component.hrefText).toBe('Example Link');
-  });
 });

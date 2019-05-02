@@ -5,8 +5,8 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
   template: `
     <footer class="{{ footerClass }}">
       <div class="{{ footerContainerClass }}">
-        <atoms-text-paragraph textClass="float-right">
-          <atoms-link hrefText="Back to top"></atoms-link>
+        <atoms-text-paragraph [textClass]="textClass">
+          <atoms-link>{{ hrefText }}</atoms-link>
         </atoms-text-paragraph>
         <atoms-text-paragraph>
           {{ text }}
@@ -29,4 +29,7 @@ export class MoleculesFooterComponent {
 
   @Input()
   textClass: string = 'float-right';
+
+  @Input()
+  hrefText: string = 'Back to top';
 }
