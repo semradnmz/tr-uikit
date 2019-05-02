@@ -33,4 +33,12 @@ describe('AtomsImgComponent', function(this: IAtomsImgComponent) {
   it('should have default imgAlt', () => {
     expect(this.component.imgAlt).toBe('Image alt');
   });
+
+  it('should have default imgAlt', () => {
+    expect(this.component.imgWidth).toBe(30);
+  });
+
+  it('should have default imgAlt', () => {
+    expect(this.component.imgHeight).toBe(30);
+  });
 });

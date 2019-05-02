@@ -17,4 +17,10 @@ export class AtomsImgComponent {
 
   @Input()
   imgAlt: string = 'Image alt';
+
+  @Input()
+  imgWidth: number = 30;
+
+  @Input()
+  imgHeight: number = 30;
 }
