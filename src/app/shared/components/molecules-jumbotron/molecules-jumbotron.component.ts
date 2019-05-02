@@ -5,13 +5,12 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from "@a
   template: `
   <section class="jumbotron {{classJumbotron}}">
   <div class="{{classContainer}}">
-  <atoms-heading [headingText]="'Jumbotron'" headingClass="h1 jumbotron-heading"></atoms-heading>
-    <atoms-text-paragraph >{{text}}</atoms-text-paragraph>
-    <p class="lead text-muted"></p>
-    <p>
-      <a href="#" class="btn btn-primary my-2">Main call to action</a>
-      <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-    </p>
+  <atoms-heading [headingClass]="headingClass" [headingText]="headingText"></atoms-heading>
+
+    <atoms-text-paragraph [textClass]="textClass" >{{textJumbotron}}</atoms-text-paragraph>
+    <atoms-link [hrefClass]="hrefClass">{{linkText}}</atoms-link>
+    <atoms-link [hrefClass]="hrefClassSecond">{{linkTextSecond}}</atoms-link>
+
   </div>
 </section>
   `,
@@ -21,13 +20,33 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from "@a
 export class MoleculesJumbotronComponent {
 
   @Input()
-  classJumbotron: string = " text-center";
+  classJumbotron: string = "text-center";
 
   @Input()
 
   classContainer: string = "container"
+  @Input()
+  headingClass: string = "h1 jumbotron-heading"
 
   @Input()
-  text: string = "Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.";
+  headingText: string = "Jumbotron"
 
+
+  @Input()
+  textJumbotron: string = "Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.";
+
+  @Input()
+  textClass: string = "lead text-muted"
+
+  @Input()
+  hrefClass: string = "btn btn-primary mx-1 my-2"
+
+  @Input()
+  linkText: string = "linkText"
+
+  @Input()
+  hrefClassSecond: string = "btn btn-secondary mx-1 my-2"
+
+  @Input()
+  linkTextSecond: string = "linkText 2"
 }
