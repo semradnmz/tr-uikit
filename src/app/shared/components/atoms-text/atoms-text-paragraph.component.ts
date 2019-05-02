@@ -1,4 +1,4 @@
-import { Input, Component } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from "@angular/core"
 
 @Component({
   selector: 'atoms-text-paragraph',
@@ -7,6 +7,8 @@ import { Input, Component } from '@angular/core';
       {{ text }}
     </p>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  encapsulation: ViewEncapsulation.None,
 })
 export class AtomsTextParagraphComponent {
   @Input()

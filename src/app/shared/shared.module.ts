@@ -12,7 +12,11 @@ const ATOMS = [
   _components.AtomsLinkComponent,
 ];
 
-const MOLECULES = [_components.MoleculesCardComponent, _components.MoleculesFooterComponent];
+const MOLECULES = [
+  _components.MoleculesCardComponent, 
+  _components.MoleculesFooterComponent,
+  _components.MoleculesJumbotronComponent
+];
 
 const ORGANISMS = [];
 
