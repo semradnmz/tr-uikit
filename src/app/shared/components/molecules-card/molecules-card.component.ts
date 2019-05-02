@@ -8,7 +8,7 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
       <div class="card-body">
         <atoms-heading [headingClass]="headingClass" [headingText]="headingText"></atoms-heading>
         <atoms-text-paragraph [textClass]="textClass">{{ text }}</atoms-text-paragraph>
-        <atoms-link [hrefSrc]="hrefSrc" [hrefClass]="hrefClass" [hrefText]="hrefText"></atoms-link>
+        <atoms-link [hrefSrc]="hrefSrc" [hrefClass]="hrefClass">{{ hrefText }}</atoms-link>
       </div>
     </div>
   `,

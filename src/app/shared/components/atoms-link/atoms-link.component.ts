@@ -3,7 +3,9 @@ import { Component, ChangeDetectionStrategy, ViewEncapsulation, Input } from '@a
 @Component({
   selector: 'atoms-link',
   template: `
-    <a href="{{ hrefSrc }}" class="{{ hrefClass }}">{{ hrefText }}</a>
+    <a href="{{ hrefSrc }}" class="{{ hrefClass }}">
+      <ng-content></ng-content>
+    </a>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
   encapsulation: ViewEncapsulation.None,
@@ -14,7 +16,4 @@ export class AtomsLinkComponent {
 
   @Input()
   hrefClass: string = 'link';
-
-  @Input()
-  hrefText: string = 'Example Link';
 }

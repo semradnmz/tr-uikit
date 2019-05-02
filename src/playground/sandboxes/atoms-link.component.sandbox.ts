@@ -5,6 +5,6 @@ export default sandboxOf(AtomsLinkComponent, {
   declareComponent: false,
 }).add('Atoms Link Component', {
   template: `
-  <atoms-link hrefSrc="#" hrefClass="link" hrefText="Example Link"></atoms-link>
+  <atoms-link hrefSrc="#" hrefClass="link">Example link</atoms-link>
   `,
 });

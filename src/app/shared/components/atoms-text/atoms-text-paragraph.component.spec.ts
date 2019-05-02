@@ -1,16 +1,13 @@
-
-
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AtomsTextParagraphComponent } from './atoms-text-paragraph.component';
-
 
 export interface IAtomsTextParagraphComponent {
   component: AtomsTextParagraphComponent;
   fixture: ComponentFixture<AtomsTextParagraphComponent>;
 }
 
-describe('AtomsTextParagraphComponent', function (this: IAtomsTextParagraphComponent) {
+describe('AtomsTextParagraphComponent', function(this: IAtomsTextParagraphComponent) {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [AtomsTextParagraphComponent],
@@ -26,8 +23,5 @@ describe('AtomsTextParagraphComponent', function (this: IAtomsTextParagraphCompo
   });
   it('should have default textClass', () => {
     expect(this.component.textClass).toBe('');
-  });
-  it('should have default text', () => {
-    expect(this.component.text).toBe('Default Text Paragraph');
   });
 });
