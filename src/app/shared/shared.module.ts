@@ -9,13 +9,13 @@ const ATOMS = [
   _components.AtomsImgComponent,
   _components.AtomsProgressComponent,
   _components.AtomsTextParagraphComponent,
+  _components.AtomsToastComponent,
   _components.AtomsLinkComponent,
 ];
 
 const MOLECULES = [_components.MoleculesCardComponent, _components.MoleculesFooterComponent];
 
 const ORGANISMS = [];
-
 @NgModule({
   imports: [],
   declarations: [...ATOMS, ...MOLECULES, ...ORGANISMS],

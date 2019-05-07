@@ -6,5 +6,6 @@ export default sandboxOf(AtomsTextParagraphComponent, {
 }).add('Atoms Text Paragraph Component', {
   template: `
    <atoms-text-paragraph textClass="text-muted">Lorem ipsum dolor</atoms-text-paragraph>
+   <atoms-text-paragraph textClass="text-muted"><small>Lorem ipsum dolor</small></atoms-text-paragraph>
   `,
 });
