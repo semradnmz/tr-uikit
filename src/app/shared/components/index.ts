@@ -9,5 +9,6 @@ export * from './atoms-heading/atoms-heading.component';
 export * from './atoms-link/atoms-link.component';
 
 // MOLECULES //
+export * from './molecules-jumbotron/molecules-jumbotron.component';
 export * from './molecules-footer/molecules-footer.component';
 export * from './molecules-card/molecules-card.component';
