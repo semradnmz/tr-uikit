@@ -59,8 +59,8 @@ describe('AtomsToastComponent', function (this: IAtomsToastComponent) {
     expect(this.component.buttonClass).toBe('ml-2 mb-1 close');
   });
 
-  it('should have default toastClose', () => {
-    expect(this.component.toastClose).toBe('&times;');
+  it('should have default toastCloseClass', () => {
+    expect(this.component.toastCloseClass).toBe('small');
   });
 
 });

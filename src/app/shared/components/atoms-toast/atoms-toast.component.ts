@@ -12,7 +12,9 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input } from '@a
       <strong class="{{toastHeaderTitleClass}}">{{toastHeaderTitle}}</strong>
       <small>{{toastTime}}</small>
       <button [type]="buttonType" class="{{buttonClass}}" data-dismiss="toast" aria-label="Close">
-        <span aria-hidden="true">{{toastClose}}</span>
+      <span class="{{toastCloseClass}}">
+      <atoms-icon iconClass="times"></atoms-icon>
+      </span>
       </button>
     </div>
     <div class="toast-body {{toastBodyClass}}">
@@ -57,8 +59,7 @@ export class AtomsToastComponent {
 
   @Input()
   buttonClass: string = "ml-2 mb-1 close"
-
   @Input()
-  toastClose: string = "&times;"
+  toastCloseClass: string = "small"
 
 }
