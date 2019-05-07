@@ -9,6 +9,7 @@ const ATOMS = [
   _components.AtomsImgComponent,
   _components.AtomsProgressComponent,
   _components.AtomsTextParagraphComponent,
+  _components.AtomsToastComponent,
   _components.AtomsLinkComponent,
 ];
 
@@ -19,7 +20,6 @@ const MOLECULES = [
 ];
 
 const ORGANISMS = [];
-
 @NgModule({
   imports: [],
   declarations: [...ATOMS, ...MOLECULES, ...ORGANISMS],

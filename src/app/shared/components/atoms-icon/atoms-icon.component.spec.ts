@@ -8,7 +8,7 @@ export interface IAtomsIconComponent {
   fixture: ComponentFixture<AtomsIconComponent>;
 }
 
-describe('AtomsIconComponent', function(this: IAtomsIconComponent) {
+describe('AtomsIconComponent', function (this: IAtomsIconComponent) {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [AtomsIconComponent],
